@@ -43,45 +43,75 @@
 
     </section>
 
-    <!-- Founder Story -->
-    <section>
+<!-- Founder Section -->
 
-        <h2 class="section-title">Meet The Founder</h2>
+<section>
+
+    <h2 class="section-title">
+        Meet The Founder
+    </h2>
+
+    <div class="founder-showcase">
+
+        <div class="founder-avatar">
+
+            <div class="avatar-circle">
+                👩🏽‍💻
+            </div>
+
+            <h3>Rhia Singh</h3>
+
+            <p class="founder-role">
+                Founder of STEM Sister
+            </p>
+
+            <div class="founder-tags">
+
+                <span>🇿🇦 South Africa</span>
+                <span>📚 Education</span>
+                <span>💻 Technology</span>
+                <span>🚀 Innovation</span>
+
+            </div>
+
+        </div>
 
         <div class="card founder-card">
 
-            <h2>👩🏽‍💻 Rhia Singh</h2>
+            <h2>
+                Creating Opportunities Through STEM
+            </h2>
 
             <p>
                 Hello and welcome to STEM Sister! My name is Rhia Singh,
-                a proud South African woman with a passion for education,
-                technology, innovation, and creating opportunities for others.
+                a passionate advocate for education, technology, innovation,
+                and empowering young women to reach their full potential.
             </p>
 
             <p>
-                Throughout my journey, I have witnessed the incredible potential
-                that young girls possess when they are given access to learning,
-                encouragement, and support. Yet many girls still face barriers
-                that prevent them from seeing just how far they can go.
+                Throughout my journey I have seen just how powerful education
+                can be when young girls are given encouragement, access to
+                opportunities, and confidence in their abilities.
             </p>
 
             <p>
-                STEM Sister was born from the belief that every girl deserves a
-                space where she feels capable, confident, inspired, and valued.
-                A space where questions are encouraged, curiosity is celebrated,
-                and dreams are transformed into goals.
+                STEM Sister was created to be a space where girls can explore,
+                learn, ask questions, build confidence, and discover exciting
+                possibilities within Science, Technology, Engineering and
+                Mathematics.
             </p>
 
             <p>
-                My hope is that STEM Sister becomes more than a website. I want
-                it to become a community that helps girls discover their strengths,
-                unlock their potential, and realise that there is a place for
-                them in every STEM field imaginable.
+                My hope is that every visitor leaves this platform believing
+                that they belong in STEM and that their dreams are worth
+                pursuing.
             </p>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
     <!-- Why STEM Sister -->
     <section>
@@ -144,6 +174,50 @@
         </div>
 
     </section>
+
+    <section>
+
+    <h2 class="section-title">
+        🔬 What Does STEM Mean?
+    </h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <div class="icon">🧪</div>
+            <h3>Science</h3>
+            <p>
+                Exploring, experimenting and understanding the world around us.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">💻</div>
+            <h3>Technology</h3>
+            <p>
+                Using innovation and digital tools to solve real-world problems.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🏗️</div>
+            <h3>Engineering</h3>
+            <p>
+                Designing, building and improving the systems that shape society.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">📐</div>
+            <h3>Mathematics</h3>
+            <p>
+                Developing logical thinking and problem-solving skills.
+            </p>
+        </div>
+
+    </div>
+
+</section>
 
     <!-- Core Values -->
     <section>
@@ -220,25 +294,41 @@
     </section>
 
     <!-- Interactive Section -->
-    <section>
+<section>
 
-        <h2 class="section-title">Ask Rhia</h2>
+    <h2 class="section-title">
+        Ask Rhia
+    </h2>
 
-        <div class="card">
+    <div class="card">
 
-            <h3>
-                What inspired the creation of STEM Sister?
-            </h3>
+        <select id="questionSelect">
 
-            <button onclick="showAnswer()" class="btn">
-                Reveal Answer
-            </button>
+            <option value="1">
+                Why did you create STEM Sister?
+            </option>
 
-            <p id="answer"></p>
+            <option value="2">
+                What advice do you have for girls?
+            </option>
 
-        </div>
+            <option value="3">
+                Why is STEM important?
+            </option>
 
-    </section>
+        </select>
+
+        <br><br>
+
+        <button onclick="showAnswer()" class="btn">
+            Show Answer
+        </button>
+
+        <p id="answer"></p>
+
+    </div>
+
+</section>
 
     <!-- Future Goals -->
     <section>
@@ -362,37 +452,85 @@
 
     </footer>
 
-    <script>
+<script>
 
-        function showAnswer() {
+function showAnswer(){
 
-            document.getElementById("answer").innerHTML =
-            "STEM Sister was inspired by a desire to make STEM more accessible, encouraging and empowering for girls. Every girl deserves opportunities to learn, dream big and achieve incredible things.";
+    const question =
+    document.getElementById("questionSelect").value;
 
-        }
+    let response = "";
 
-        function savePromise() {
+    if(question === "1"){
 
-            const promise =
-            document.getElementById("promiseInput").value;
+        response =
+        "I created STEM Sister because I wanted girls to have a safe, inspiring space where they can learn, grow, and explore STEM opportunities.";
 
-            if (promise === "") {
+    }
 
-                document.getElementById("promiseOutput").innerHTML =
-                "🌟 Make a promise to your future self and watch what happens when you believe in your potential.";
+    if(question === "2"){
 
-            } else {
+        response =
+        "Believe in yourself, stay curious, keep learning, and never let anyone limit what you think you can achieve.";
 
-                document.getElementById("promiseOutput").innerHTML =
-                "💜 Your promise: <strong>" +
-                promise +
-                "</strong><br><br>Keep this promise close and let it guide your journey toward success.";
+    }
 
-            }
+    if(question === "3"){
 
-        }
+        response =
+        "STEM helps us solve problems, improve lives, drive innovation, and create the future. Girls deserve to be part of that future.";
 
-    </script>
+    }
+
+    document.getElementById("answer").innerHTML =
+    response;
+}
+
+function savePromise(){
+
+    const promise =
+    document.getElementById("promiseInput").value;
+
+    if(promise.trim() === ""){
+
+        document.getElementById("promiseOutput").innerHTML =
+        "🌟 Make a promise to your future self and believe in your potential.";
+
+    }
+
+    else{
+
+        localStorage.setItem(
+            "stemPromise",
+            promise
+        );
+
+        document.getElementById("promiseOutput").innerHTML =
+        "💜 Your promise: <strong>" +
+        promise +
+        "</strong><br><br>Keep this promise close and let it guide your journey.";
+
+    }
+
+}
+
+window.onload = () => {
+
+    const saved =
+    localStorage.getItem("stemPromise");
+
+    if(saved){
+
+        document.getElementById("promiseOutput").innerHTML =
+        "💜 Your promise: <strong>" +
+        saved +
+        "</strong>";
+
+    }
+
+};
+
+</script>
 
 </body>
 </html>
