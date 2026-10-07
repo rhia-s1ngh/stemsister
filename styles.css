@@ -13,7 +13,9 @@
     --dark:#1f2937;
     --light:#fffdf8;
     --white:#ffffff;
-    --shadow:0 10px 30px rgba(0,0,0,0.08);
+
+    --shadow:
+    0 10px 30px rgba(0,0,0,.08);
 }
 
 *{
@@ -28,7 +30,14 @@ html{
 }
 
 body{
-    background:var(--light);
+    background:
+    linear-gradient(
+        180deg,
+        #fff8ff,
+        #f8f5ff,
+        #eef6ff
+    );
+
     color:var(--dark);
     line-height:1.7;
     overflow-x:hidden;
@@ -49,8 +58,10 @@ nav{
 
     padding:18px 8%;
 
-    background:white;
-    box-shadow:0 2px 15px rgba(0,0,0,0.08);
+    background:rgba(255,255,255,.95);
+    backdrop-filter:blur(10px);
+
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
 }
 
 .logo{
@@ -82,6 +93,9 @@ nav{
    ========================= */
 
 .hero{
+    position:relative;
+    overflow:hidden;
+
     min-height:90vh;
 
     display:flex;
@@ -104,19 +118,21 @@ nav{
 }
 
 .hero-content{
-    max-width:900px;
+    max-width:950px;
+    position:relative;
+    z-index:2;
 }
 
 .tagline{
     display:inline-block;
 
-    padding:12px 20px;
+    padding:12px 24px;
 
-    background:rgba(255,255,255,0.15);
+    background:rgba(255,255,255,.15);
 
     border-radius:50px;
 
-    margin-bottom:20px;
+    margin-bottom:25px;
 
     font-weight:600;
 
@@ -124,8 +140,13 @@ nav{
 }
 
 .hero h1{
-    font-size:4.5rem;
-    margin-bottom:20px;
+    font-size:4.8rem;
+    line-height:1.1;
+
+    margin-bottom:25px;
+
+    text-shadow:
+    0 8px 25px rgba(0,0,0,.2);
 
     animation:float 5s ease-in-out infinite;
 }
@@ -133,6 +154,57 @@ nav{
 .hero p{
     font-size:1.2rem;
     margin-bottom:30px;
+}
+
+.hero-buttons{
+    margin-top:20px;
+}
+
+/* =========================
+   FLOATING ICONS
+   ========================= */
+
+.floating-icons{
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+}
+
+.floating-icons span{
+    position:absolute;
+    font-size:2.5rem;
+    opacity:.25;
+    animation:floatIcon 8s ease-in-out infinite;
+}
+
+.floating-icons span:nth-child(1){
+    top:10%;
+    left:10%;
+}
+
+.floating-icons span:nth-child(2){
+    top:20%;
+    right:15%;
+}
+
+.floating-icons span:nth-child(3){
+    bottom:12%;
+    left:18%;
+}
+
+.floating-icons span:nth-child(4){
+    bottom:18%;
+    right:18%;
+}
+
+.floating-icons span:nth-child(5){
+    top:40%;
+    left:88%;
+}
+
+.floating-icons span:nth-child(6){
+    top:35%;
+    left:4%;
 }
 
 /* =========================
@@ -143,8 +215,6 @@ nav{
     display:inline-block;
 
     padding:15px 32px;
-
-    margin:10px;
 
     border:none;
 
@@ -168,7 +238,9 @@ nav{
 }
 
 .btn:hover{
-    transform:translateY(-5px);
+    transform:
+    translateY(-5px)
+    scale(1.03);
 }
 
 /* =========================
@@ -190,36 +262,6 @@ section{
 }
 
 /* =========================
-   CARDS
-   ========================= */
-
-.card{
-    background:white;
-
-    padding:30px;
-
-    border-radius:25px;
-
-    box-shadow:var(--shadow);
-
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-10px);
-}
-
-.card h3{
-    color:var(--purple);
-    margin-bottom:10px;
-}
-
-.icon{
-    font-size:3rem;
-    margin-bottom:15px;
-}
-
-/* =========================
    GRID
    ========================= */
 
@@ -233,6 +275,41 @@ section{
 }
 
 /* =========================
+   CARDS
+   ========================= */
+
+.card{
+    background:rgba(255,255,255,.95);
+
+    padding:30px;
+
+    border-radius:25px;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+}
+
+.card:hover{
+    transform:
+    translateY(-10px)
+    scale(1.02);
+
+    box-shadow:
+    0 20px 40px rgba(139,92,246,.15);
+}
+
+.card h3{
+    color:var(--purple);
+    margin-bottom:10px;
+}
+
+.icon{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+/* =========================
    STATS
    ========================= */
 
@@ -240,28 +317,52 @@ section{
     display:grid;
 
     grid-template-columns:
-    repeat(auto-fit,minmax(200px,1fr));
+    repeat(auto-fit,minmax(220px,1fr));
 
     gap:25px;
-
-    background:#faf7ff;
 }
 
 .stat-card{
-    background:white;
+    text-align:center;
 
-    border-radius:25px;
+    background:white;
 
     padding:30px;
 
-    text-align:center;
+    border-radius:25px;
 
     box-shadow:var(--shadow);
+
+    transition:.3s;
+}
+
+.stat-card:hover{
+    transform:translateY(-8px);
 }
 
 .stat-card h2{
-    font-size:2.8rem;
+    font-size:3rem;
     color:var(--purple);
+}
+
+/* =========================
+   COUNTER SECTION
+   ========================= */
+
+.counter-section{
+    text-align:center;
+    background:white;
+}
+
+.counter-section h1{
+    font-size:5rem;
+    color:var(--pink);
+    font-weight:800;
+}
+
+.counter-section p{
+    font-size:1.2rem;
+    font-weight:600;
 }
 
 /* =========================
@@ -285,32 +386,82 @@ section{
 }
 
 /* =========================
-   CAREERS
+   STEM JOURNEY
    ========================= */
 
-.career{
+.journey{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(170px,1fr));
+
+    gap:20px;
+}
+
+.step{
     background:
     linear-gradient(
         135deg,
         var(--purple),
-        var(--pink)
+        var(--blue)
     );
 
     color:white;
 
     text-align:center;
 
-    font-weight:700;
-
     padding:25px;
 
     border-radius:20px;
 
+    font-weight:700;
+
+    box-shadow:var(--shadow);
+
     transition:.3s;
 }
 
-.career:hover{
+.step:hover{
     transform:translateY(-8px);
+}
+
+/* =========================
+   CAREER EXPLORER
+   ========================= */
+
+.career-explorer{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+}
+
+.career-explorer button{
+    border:none;
+
+    background:var(--purple);
+
+    color:white;
+
+    padding:15px 20px;
+
+    margin:10px;
+
+    border-radius:15px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.career-explorer button:hover{
+    background:var(--pink);
+    transform:translateY(-5px);
+}
+
+#careerResult{
+    margin-top:25px;
+    font-size:1.2rem;
+    font-weight:700;
 }
 
 /* =========================
@@ -342,9 +493,9 @@ section{
 
     padding:18px;
 
-    border:2px solid #e5e7eb;
-
     border-radius:15px;
+
+    border:2px solid #e5e7eb;
 
     margin-bottom:20px;
 
@@ -356,9 +507,7 @@ section{
     border-color:var(--purple);
 }
 
-#goalDisplay,
-#promiseOutput,
-#answer{
+#goalDisplay{
     margin-top:20px;
     font-weight:600;
 }
@@ -383,10 +532,6 @@ section{
     text-align:center;
 }
 
-.quiz h3{
-    margin-bottom:20px;
-}
-
 .quiz button{
     width:100%;
 
@@ -400,8 +545,6 @@ section{
 
     background:#f3f4f6;
 
-    font-size:1rem;
-
     cursor:pointer;
 
     transition:.3s;
@@ -413,52 +556,40 @@ section{
 
 .result{
     margin-top:20px;
-    font-size:1.2rem;
     font-weight:700;
 }
 
 /* =========================
-   TIMELINE
+   BADGE
    ========================= */
 
-.timeline{
-    display:grid;
-
-    grid-template-columns:
-    repeat(auto-fit,minmax(220px,1fr));
-
-    gap:25px;
-}
-
-/* =========================
-   FOUNDER
-   ========================= */
-
-.founder-card{
-    max-width:1000px;
+.badge-box{
+    max-width:700px;
     margin:auto;
-}
-
-.founder-card p{
-    margin-bottom:18px;
-}
-
-/* =========================
-   QUOTES
-   ========================= */
-
-.quote{
-    background:#f3edff;
     text-align:center;
 }
 
-.quote h2{
-    max-width:900px;
-    margin:auto;
+#badgeDisplay{
+    margin-top:25px;
 }
 
-.quote p{
-    margin-top:20px;
+/* =========================
+   QUOTE SECTION
+   ========================= */
+
+.quote-section{
+    text-align:center;
+    background:#f3edff;
+}
+
+.quote-section blockquote{
+    font-size:1.6rem;
+    font-weight:700;
+    color:var(--purple);
+}
+
+.quote-section p{
+    margin-top:15px;
     font-weight:600;
 }
 
@@ -495,12 +626,8 @@ section{
 }
 
 /* =========================
-   QUICK LINKS
+   LINKS
    ========================= */
-
-.quick-links{
-    background:#faf7ff;
-}
 
 .card-link{
     text-decoration:none;
@@ -509,15 +636,6 @@ section{
 
 .card-link:hover{
     color:inherit;
-}
-
-.quick-links .card:hover{
-    background:var(--purple);
-    color:white;
-}
-
-.quick-links .card:hover h3{
-    color:white;
 }
 
 /* =========================
@@ -534,21 +652,8 @@ footer{
     padding:60px 20px;
 }
 
-footer h3{
-    margin-bottom:15px;
-}
-
 footer p{
     margin-bottom:10px;
-}
-
-footer a{
-    color:var(--yellow);
-    text-decoration:none;
-}
-
-footer a:hover{
-    color:white;
 }
 
 .made-by{
@@ -601,6 +706,22 @@ footer a:hover{
 
 }
 
+@keyframes floatIcon{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-20px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
 /* =========================
    MOBILE
    ========================= */
@@ -608,35 +729,4 @@ footer a:hover{
 @media(max-width:768px){
 
     nav{
-        flex-direction:column;
-        gap:15px;
-    }
-
-    .nav-links{
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:15px;
-    }
-
-    .hero h1{
-        font-size:2.8rem;
-    }
-
-    .hero p{
-        font-size:1rem;
-    }
-
-    .section-title{
-        font-size:2rem;
-    }
-
-    .btn{
-        width:100%;
-        max-width:320px;
-    }
-
-    .stats{
-        grid-template-columns:1fr;
-    }
-
-}
+       
