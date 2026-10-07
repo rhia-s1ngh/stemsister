@@ -1,496 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>STEM Sister | Learn. Dream. Innovate.</title>
+    <title>STEM Sister | Learn. Dream. Innovate.</title>
 
-https://fonts.googleapis.com
-https://fonts.gstatic.com
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700=swap
-
-<style>
-
-:root{
-    --purple:#8b5cf6;
-    --pink:#ec4899;
-    --blue:#3b82f6;
-    --yellow:#facc15;
-    --teal:#14b8a6;
-    --bg:#fffdf8;
-    --dark:#1f2937;
-}
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    background:var(--bg);
-    color:var(--dark);
-}
-
-/* NAVBAR */
-
-nav{
-    position:sticky;
-    top:0;
-    background:white;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:18px 8%;
-    box-shadow:0 2px 15px rgba(0,0,0,.08);
-    z-index:1000;
-}
-
-.logo{
-    font-size:1.8rem;
-    font-weight:800;
-    color:var(--purple);
-}
-
-nav ul{
-    list-style:none;
-    display:flex;
-    gap:25px;
-}
-
-nav a{
-    text-decoration:none;
-    color:#444;
-    font-weight:600;
-    transition:.3s;
-}
-
-nav a:hover{
-    color:var(--pink);
-}
-
-/* HERO */
-
-.hero{
-    min-height:90vh;
-    background:linear-gradient(135deg,#8b5cf6,#ec4899,#3b82f6);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    color:white;
-    padding:50px;
-}
-
-.hero-content h1{
-    font-size:4.5rem;
-    margin-bottom:20px;
-    animation:float 5s infinite ease-in-out;
-}
-
-.hero-content p{
-    font-size:1.2rem;
-    max-width:800px;
-    margin:auto;
-    line-height:1.8;
-    margin-bottom:30px;
-}
-
-.btn{
-    display:inline-block;
-    padding:15px 30px;
-    border-radius:40px;
-    text-decoration:none;
-    font-weight:700;
-    margin:10px;
-    transition:.3s;
-}
-
-.btn-primary{
-    background:white;
-    color:var(--purple);
-}
-
-.btn-secondary{
-    background:var(--yellow);
-    color:#111;
-}
-
-.btn:hover{
-    transform:translateY(-5px);
-}
-
-/* SECTION */
-
-section{
-    padding:80px 8%;
-}
-
-.section-title{
-    text-align:center;
-    color:var(--purple);
-    margin-bottom:50px;
-    font-size:2.5rem;
-}
-
-/* FEATURE CARDS */
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-}
-
-.card{
-    background:white;
-    border-radius:25px;
-    padding:30px;
-    text-align:center;
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-10px);
-}
-
-.icon{
-    font-size:3rem;
-    margin-bottom:15px;
-}
-
-/* QUOTE */
-
-.quote{
-    background:#f3edff;
-    text-align:center;
-}
-
-.quote h2{
-    font-size:2rem;
-    max-width:900px;
-    margin:auto;
-}
-
-/* PATHS */
-
-.path{
-    color:white;
-    border-radius:25px;
-    padding:30px;
-}
-
-.p1{background:#14b8a6;}
-.p2{background:#ec4899;}
-.p3{background:#3b82f6;}
-.p4{background:#8b5cf6;}
-
-/* ROLE MODELS */
-
-.role-model{
-    background:white;
-    border-radius:20px;
-    padding:25px;
-    text-align:center;
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
-}
-
-/* QUIZ */
-
-.quiz{
-    max-width:700px;
-    margin:auto;
-    background:white;
-    border-radius:20px;
-    padding:40px;
-    box-shadow:0 8px 25px rgba(0,0,0,.08);
-}
-
-.quiz button{
-    width:100%;
-    margin-top:10px;
-    padding:15px;
-    border:none;
-    border-radius:12px;
-    cursor:pointer;
-    font-size:1rem;
-}
-
-.quiz button:hover{
-    opacity:.9;
-}
-
-.result{
-    margin-top:20px;
-    font-size:1.2rem;
-    font-weight:700;
-}
-
-/* DREAM WALL */
-
-.dream{
-    background:white;
-    padding:25px;
-    border-radius:20px;
-    font-style:italic;
-}
-
-/* FOOTER */
-
-footer{
-    background:#1f2937;
-    color:white;
-    text-align:center;
-    padding:40px;
-}
-
-footer a{
-    color:#facc15;
-    text-decoration:none;
-}
-
-@keyframes float{
-    0%{transform:translateY(0);}
-    50%{transform:translateY(-15px);}
-    100%{transform:translateY(0);}
-}
-
-@media(max-width:768px){
-
-.hero-content h1{
-    font-size:2.8rem;
-}
-
-nav ul{
-    display:none;
-}
-
-}
-
-</style>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<nav>
-    <div class="logo">🌟 STEM Sister</div>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">🌟 STEM Sister</div>
 
-    <ul>
-        <li><a href="index.html/li>
-        <li><a href="lAbout Me</a></li>
-        <li><a href="discussions.html">Discussions       <li><a href="textbooks.html">a></li>
-        <li><ests.htmlSimulated Tests</a></li>
-        <li><a href="wellness.html">Wellness Hub</a></li>
-/nav>
+        <ul>
+            <li><a href="index.html/li>
+            <li><a href="aboutt Me</a></li>
+            <li><a href="discussionsussions</a></li>
+            <li><a href="textbooks.html</a></li>
+            <li><ests.htmlSimulated Tests</a></li>
+            <li><a href="wellness.html">Wellness Hub</a></li>
+l>
+    </nav>
 
-<section class="hero">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
 
-<div class="hero-content">
+            <h1>Learn. Dream. Innovate.</h1>
 
-<h1>Learn. Dream. Innovate.</h1>
+            <p>
+                Welcome to STEM Sister, a safe and inspiring space where girls can
+                explore STEM, discover their strengths, build confidence, and
+                prepare for a brighter future.
+            </p>
 
-<p>
-Welcome to STEM Sister, a safe and inspiring space where girls can explore STEM, discover their strengths, build confidence, and prepare for a brighter future.
-</p>
+            textbooks.html
+                📚 Start Learning
+            </a>
 
-<a href=".html📚 Start Learning</a>
+            <a href="tests.html" class 🚀 Take a Challenge
+            </a>
 
-<a href="tests.html" class="btn btn-secondarysection>
+        </div>
+    </section>
 
-<section>
+    <!-- What You'll Discover -->
+    <section>
 
-<h2 class="section-title">What You'll Discover</h2>
+        <h2 class="section-title">What You'll Discover</h2>
 
-<div class="grid">
+        <div class="grid">
 
-<div class="card">
-<div class="icon">🔬</div>
-<h3>Science</h3>
-<p>Explore the wonders of our world.</p>
-</div>
+            <div class="card">
+                <div class="icon">🔬</div>
+                <h3>Science</h3>
+                <p>Explore the wonders of our world.</p>
+            </div>
 
-<div class="card">
-<div class="icon">💻</div>
-<h3>Technology</h3>
-<p>Learn coding and digital skills.</p>
-</div>
+            <div class="card">
+                <div class="icon">💻</div>
+                <h3>Technology</h3>
+                <p>Learn coding and digital skills.</p>
+            </div>
 
-<div class="card">
-<div class="icon">⚙️</div>
-<h3>Engineering</h3>
-<p>Design, build and innovate.</p>
-</div>
+            <div class="card">
+                <div class="icon">⚙️</div>
+                <h3>Engineering</h3>
+                <p>Design, build and innovate.</p>
+            </div>
 
-<div class="card">
-<div class="icon">➗</div>
-<h3>Mathematics</h3>
-<p>Develop critical thinking skills.</p>
-</div>
+            <div class="card">
+                <div class="icon">➗</div>
+                <h3>Mathematics</h3>
+                <p>Develop critical thinking and problem-solving skills.</p>
+            </div>
 
-</div>
+        </div>
 
-</section>
+    </section>
 
-<section class="quote">
+    <!-- Quote Section -->
+    <section class="quote">
 
-<h2>
-✨ Every girl has the power to change the world through knowledge, courage, and curiosity. ✨
-</h2>
+        <h2>
+            ✨ Every girl has the power to change the world through knowledge,
+            courage, and curiosity. ✨
+        </h2>
 
-</section>
+    </section>
 
-<section>
+    <!-- Learning Paths -->
+    <section>
 
-<h2 class="section-title">Choose Your Journey</h2>
+        <h2 class="section-title">Choose Your Journey</h2>
 
-<div class="grid">
+        <div class="grid">
 
-<div class="path p1">
-<h3>🌿 Explorer</h3>
-<p>Science, nature and discovery.</p>
-</div>
+            <div class="path p1">
+                <h3>🌿 Explorer</h3>
+                <p>Science, nature and discovery.</p>
+            </div>
 
-<div class="path p2">
-<h3>🎨 Creator</h3>
-<p>Design, creativity and innovation.</p>
-</div>
+            <div class="path p2">
+                <h3>🎨 Creator</h3>
+                <p>Design, creativity and innovation.</p>
+            </div>
 
-<div class="path p3">
-<h3>💻 Tech Star</h3>
-<p>Coding, AI and digital skills.</p>
-</div>
+            <div class="path p3">
+                <h3>💻 Tech Star</h3>
+                <p>Coding, AI and digital skills.</p>
+            </div>
 
-<div class="path p4">
-<h3>👑 Future Leader</h3>
-<p>Confidence, leadership and impact.</p>
-</div>
+            <div class="path p4">
+                <h3>👑 Future Leader</h3>
+                <p>Confidence, leadership and positive impact.</p>
+            </div>
 
-</div>
+        </div>
 
-</section>
+    </section>
 
-<section>
+    <!-- Inspirational Women -->
+    <section>
 
-<h2 class="section-title">Women Who Inspire</h2>
+        <h2 class="section-title">Women Who Inspire</h2>
 
-<div class="grid">
+        <div class="grid">
 
-<div class="role-model">
-<h3>👩‍💻 Ada Lovelace</h3>
-<p>The first computer programmer.</p>
-</div>
+            <div class="role-model">
+                <h3>👩‍💻 Ada Lovelace</h3>
+                <p>The world's first computer programmer.</p>
+            </div>
 
-<div class="role-model">
-<h3>👩‍🚀 Mae Jemison</h3>
-<p>The first African-American woman in space.</p>
-</div>
+            <div class="role-model">
+                <h3>👩‍🚀 Mae Jemison</h3>
+                <p>The first African-American woman in space.</p>
+            </div>
 
-<div class="role-model">
-<h3>👩‍🔬 Marie Curie</h3>
-<p>Nobel Prize-winning scientist.</p>
-</div>
+            <div class="role-model">
+                <h3>👩‍🔬 Marie Curie</h3>
+                <p>Nobel Prize-winning scientist and pioneer.</p>
+            </div>
 
-<div class="role-model">
-<h3>👩🏽‍💼 You!</h3>
-<p>The next great innovator.</p>
-</div>
+            <div class="role-model">
+                <h3>👩🏽‍💼 You!</h3>
+                <p>The next innovator, engineer, scientist or leader.</p>
+            </div>
 
-</div>
+        </div>
 
-</section>
+    </section>
 
-<section>
+    <!-- Quick Quiz -->
+    <section>
 
-<h2 class="section-title">Quick Challenge</h2>
+        <h2 class="section-title">Quick STEM Challenge</h2>
 
-<div class="quiz">
+        <div class="quiz">
 
-<h3>What is 8 × 9?</h3>
+            <h3>What is 8 × 9?</h3>
 
-<button onclick="checkAnswer(63)">63</button>
-<button onclick="checkAnswer(72)">72</button>
-<button onclick="checkAnswer(81)">81</button>
+            <button onclick="checkAnswer(63)">63</button>
+            <button onclick="checkAnswer(72)">72</button>
+            <button onclick="checkAnswer(81)">81</button>
 
-<div id="result" class="result"></div>
+            <div id="result" class="result"></div>
 
-</div>
+        </div>
 
-</section>
+    </section>
 
-<section>
+    <!-- Dream Wall -->
+    <section>
 
-<h2 class="section-title">Dream Wall</h2>
+        <h2 class="section-title">Dream Wall</h2>
 
-<div class="grid">
+        <div class="grid">
 
-<div class="dream">
-"I want to become a doctor and help children."
-</div>
+            <div class="dream">
+                "I want to become a doctor and help children."
+            </div>
 
-<div class="dream">
-"I want to be a software engineer."
-</div>
+            <div class="dream">
+                "I want to be a software engineer."
+            </div>
 
-<div class="dream">
-"I want to build robots."
-</div>
+            <div class="dream">
+                "I want to build robots that change lives."
+            </div>
 
-<div class="dream">
-"I want to become an astronaut."
-</div>
+            <div class="dream">
+                "I want to become an astronaut and explore space."
+            </div>
 
-</div>
+        </div>
 
-</section>
+    </section>
 
+    <!-- Quick Access -->
+    <section class="quick-links">
+
+        <h2 class="section-title">Explore STEM Sister</h2>
+
+        <div class="grid">
+
+            <aout.html
+                <div class="card">
+                    <div class="icon">👩🏽‍💻</div>
+                    <h3>About Rhia</h3>
+                    <p>Meet the founder of STEM Sister.</p>
+                </div>
+            </a>
+
+            <a href="discussions.html" style="div class="card">
+                    <div class="icon">💬</div>
+                    <h3>Discussion Hub</h3>
+                    <p>Ask questions and learn together.</p>
+                </div>
+            </a>
+
+            <a href="textbooks.html" style="text-decoration">
+                    <div class="icon">📚</div>
+                    <h3>Textbooks</h3>
+                    <p>Free learning resources and study materials.</p>
+                </div>
+            </a>
+
+            tests.html
+                <div class="card">
+                    <div class="icon">📝</div>
+                    <h3>Simulated Tests</h3>
+                    <p>Practice and prepare with confidence.</p>
+                </div>
+            </a>
+
+            <a href="wellness.html" style="text-decoration:none;color:inherit    <div class="icon">💜</div>
+                    <h3>Wellness Hub</h3>
+                    <p>Mental wellness, self-care and confidence building.</p>
+                </div>
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
 <footer>
 
-<h3>🌟 STEM Sister</h3>
+    <h3>🌟 STEM Sister</h3>
 
-<p>
-Founded by <strong>Rhia Singh</strong> 🇿🇦🇮🇳
-</p>
+    <p>
+        Empowering girls through STEM education, wellbeing,
+        leadership, and opportunity.
+    </p>
 
-<br>
+    <p>&copy; 2026 STEM Sister. All Rights Reserved.</p>
 
-<p>
-Empowering girls through STEM education, wellbeing, leadership and opportunity.
-</p>
-
-<br>
-
-<p>
-about.htmlAbout</a> |
-<a href="discussions.html">Discussions</a>s.htmlTextbooks</a> |
-<a href="tests.html">Tests</a> |
-mlWellness Hub</a>
-</p>
+    <div class="made-by">
+        Made with ❤️ by <strong>Rhia Singh</strong>
+    </div>
 
 </footer>
 
-<script>
+    <script>
+        function checkAnswer(answer) {
 
-function checkAnswer(answer){
+            const result = document.getElementById("result");
 
-const result = document.getElementById("result");
-
-if(answer === 72){
-    result.innerHTML = "✅ Amazing! That's correct!";
-    result.style.color = "green";
-}
-else{
-    result.innerHTML = "❌ Not quite. Try again!";
-    result.style.color = "crimson";
-}
-
-}
-
-</script>
+            if (answer === 72) {
+                result.innerHTML = "✅ Amazing! That's correct!";
+                result.style.color = "green";
+            } else {
+                result.innerHTML = "❌ Not quite. Try again!";
+                result.style.color = "crimson";
+            }
+        }
+    </script>
 
 </body>
 </html>
