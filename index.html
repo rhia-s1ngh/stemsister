@@ -15,7 +15,7 @@
 
         <ul class="nav-links">
             <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html" class="active">About STEM Sister</a></li>
+            <li><a href="about.html">About STEM Sister</a></li>
             <li><a href="textbooks.html">Learning Resources</a></li>
             <li><a href="tests.html">STEM Challenges</a></li>
             <li><a href="discussions.html">Community</a></li>
@@ -23,43 +23,50 @@
         </ul>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section class="hero">
+
+        <div class="floating-icons">
+            <span>🚀</span>
+            <span>🔬</span>
+            <span>💻</span>
+            <span>🧬</span>
+            <span>🤖</span>
+            <span>⚛️</span>
+        </div>
 
         <div class="hero-content">
 
             <span class="tagline">
-                🌟 Empowering Young Women Through Education
+                🌟 Empowering Future Scientists, Engineers & Innovators
             </span>
 
-            <h1>Learn. Dream. Innovate.</h1>
+            <h1>Dream Big. Learn Fearlessly. Change The World.</h1>
 
             <p>
-                Welcome to STEM Sister, an educational platform created to inspire,
-                empower, and support girls in Science, Technology, Engineering,
-                and Mathematics. Whether you're exploring a new subject, preparing
-                for exams, growing your confidence, or discovering future careers,
-                STEM Sister is here to help you unlock your full potential.
+                STEM Sister is a vibrant learning space designed to help girls
+                discover opportunities in Science, Technology, Engineering and
+                Mathematics through fun activities, challenges, learning
+                resources, wellbeing support and community connection.
             </p>
 
-<div class="hero-buttons">
+            <div class="hero-buttons">
 
-    <a href="textbooks.html" class="btn">
-        📚 Start Learning
-    </a>
+                <a href="textbooks.html" class="btn">
+                    📚 Start Learning
+                </a>
 
-    <a href="tests.html" class="btn secondary">
-        🚀 Take a Challenge
-    </a>
+                <a href="tests.html" class="btn secondary">
+                    🚀 Take A Challenge
+                </a>
 
-</div>
+            </div>
 
         </div>
 
-
     </section>
 
-    <!-- Stats Section -->
+    <!-- Stats -->
     <section class="stats">
 
         <div class="stat-card">
@@ -84,6 +91,19 @@
 
     </section>
 
+    <!-- Counter -->
+    <section class="counter-section">
+
+        <h2 class="section-title">
+            🌍 Girls Impacting The Future
+        </h2>
+
+        <h1 id="counter">0</h1>
+
+        <p>Future STEM Leaders Inspired</p>
+
+    </section>
+
     <!-- Mission -->
     <section>
 
@@ -92,12 +112,28 @@
         <div class="mission-card">
 
             <p>
-                Every girl deserves access to quality education, opportunities,
-                mentorship, and encouragement. STEM Sister exists to help break
-                barriers by providing accessible educational resources, wellness
-                support, interactive learning tools, and a safe community where
-                girls can thrive academically and personally.
+                Every girl deserves access to quality education, mentorship,
+                confidence-building opportunities and a supportive community.
+                STEM Sister helps young women develop skills, curiosity and
+                courage to pursue their dreams.
             </p>
+
+        </div>
+
+    </section>
+
+    <!-- STEM Journey -->
+    <section>
+
+        <h2 class="section-title">🚀 Your STEM Journey</h2>
+
+        <div class="journey">
+
+            <div class="step">🌱 Dream</div>
+            <div class="step">📚 Learn</div>
+            <div class="step">🧠 Practice</div>
+            <div class="step">🚀 Innovate</div>
+            <div class="step">🌟 Lead</div>
 
         </div>
 
@@ -106,76 +142,80 @@
     <!-- What We Offer -->
     <section>
 
-        <h2 class="section-title">What STEM Sister Offers</h2>
+        <h2 class="section-title">
+            What STEM Sister Offers
+        </h2>
 
         <div class="grid">
 
             <div class="card">
                 <div class="icon">📚</div>
                 <h3>Study Resources</h3>
-                <p>
-                    Access textbooks, notes, learning materials, and educational
-                    content designed to help you succeed.
-                </p>
+                <p>Textbooks, learning materials and guides.</p>
             </div>
 
             <div class="card">
                 <div class="icon">📝</div>
-                <h3>Practice Tests</h3>
-                <p>
-                    Challenge yourself with simulated assessments and build
-                    confidence before real exams.
-                </p>
+                <h3>Practice Challenges</h3>
+                <p>Test and strengthen your knowledge.</p>
             </div>
 
             <div class="card">
                 <div class="icon">💬</div>
-                <h3>Discussion Hub</h3>
-                <p>
-                    Ask questions, share ideas, and learn with other students.
-                </p>
+                <h3>Community</h3>
+                <p>Connect, collaborate and learn together.</p>
             </div>
 
             <div class="card">
                 <div class="icon">💜</div>
                 <h3>Wellness Hub</h3>
-                <p>
-                    Discover self-care tips, motivation, confidence-building,
-                    and mental wellness resources.
-                </p>
+                <p>Confidence, self-care and motivation resources.</p>
             </div>
 
         </div>
 
     </section>
 
-    <!-- Careers -->
+    <!-- Career Explorer -->
     <section>
 
-        <h2 class="section-title">Future Careers You Could Explore</h2>
+        <h2 class="section-title">
+            🌟 Which STEM Career Matches You?
+        </h2>
 
-        <div class="grid">
+        <div class="career-explorer">
 
-            <div class="career">👩🏽‍⚕️ Doctor</div>
-            <div class="career">👩🏽‍💻 Software Engineer</div>
-            <div class="career">👩🏽‍🔬 Scientist</div>
-            <div class="career">👩🏽‍🚀 Astronaut</div>
-            <div class="career">👷🏽‍♀️ Civil Engineer</div>
-            <div class="career">👩🏽‍🏫 Teacher</div>
-            <div class="career">🔐 Cybersecurity Analyst</div>
-            <div class="career">🤖 Robotics Engineer</div>
+            <button onclick="careerMatch('creative')">
+                🎨 Creative
+            </button>
+
+            <button onclick="careerMatch('logical')">
+                🧠 Logical
+            </button>
+
+            <button onclick="careerMatch('helpful')">
+                ❤️ Helpful
+            </button>
+
+            <button onclick="careerMatch('curious')">
+                🔬 Curious
+            </button>
+
+            <p id="careerResult"></p>
 
         </div>
 
     </section>
 
-    <!-- STEM Fact Generator -->
+    <!-- STEM Fact -->
     <section class="fact-section">
 
-        <h2 class="section-title">✨ STEM Fact Generator</h2>
+        <h2 class="section-title">
+            ✨ STEM Fact Generator
+        </h2>
 
         <p id="fact">
-            Click the button below to discover an inspiring STEM fact.
+            Click below to discover a STEM fact.
         </p>
 
         <button onclick="generateFact()" class="btn">
@@ -184,39 +224,75 @@
 
     </section>
 
+    <!-- Motivation -->
+    <section>
+
+        <h2 class="section-title">
+            💜 Daily Motivation
+        </h2>
+
+        <div class="card">
+
+            <p id="motivationText">
+                Click below for a dose of inspiration.
+            </p>
+
+            <button onclick="motivateMe()" class="btn">
+                ✨ Inspire Me
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Joke Generator -->
+    <section>
+
+        <h2 class="section-title">
+            😂 STEM Joke Generator
+        </h2>
+
+        <div class="card">
+
+            <p id="joke">
+                Need a laugh?
+            </p>
+
+            <button onclick="generateJoke()" class="btn">
+                Tell Me A Joke
+            </button>
+
+        </div>
+
+    </section>
+
     <!-- Women Who Inspire -->
     <section>
 
-        <h2 class="section-title">Women Who Inspire</h2>
+        <h2 class="section-title">
+            Women Who Inspire
+        </h2>
 
         <div class="grid">
 
             <div class="card">
                 <h3>👩‍💻 Ada Lovelace</h3>
-                <p>
-                    Recognised as the world's first computer programmer.
-                </p>
+                <p>Often recognised as the first programmer.</p>
             </div>
 
             <div class="card">
                 <h3>👩‍🚀 Mae Jemison</h3>
-                <p>
-                    The first African-American woman to travel into space.
-                </p>
+                <p>First African-American woman in space.</p>
             </div>
 
             <div class="card">
                 <h3>👩‍🔬 Marie Curie</h3>
-                <p>
-                    The first woman to win a Nobel Prize.
-                </p>
+                <p>First woman to win a Nobel Prize.</p>
             </div>
 
             <div class="card">
-                <h3>👩🏽‍💼 Future Leader</h3>
-                <p>
-                    Every journey starts with a dream and determination.
-                </p>
+                <h3>🌟 YOU</h3>
+                <p>The next innovator who changes the world.</p>
             </div>
 
         </div>
@@ -224,120 +300,92 @@
     </section>
 
     <!-- Goal Setter -->
-<section>
-
-    <h2 class="section-title">
-        My Future STEM Goal
-    </h2>
-
-    <div class="goal-box">
-
-        <input
-            type="text"
-            id="goalInput"
-            placeholder="I want to become..."
-        >
-
-        <button onclick="saveGoal()" class="btn">
-            Save My Goal
-        </button>
-
-        <p id="goalDisplay"></p>
-
-    </div>
-
-</section>
-
-    <!-- Quick Quiz -->
     <section>
 
-        <h2 class="section-title">Quick STEM Challenge</h2>
+        <h2 class="section-title">
+            My Future STEM Goal
+        </h2>
 
-        <div class="quiz">
+        <div class="goal-box">
 
-            <h3>What is 8 × 9?</h3>
+            <input
+                type="text"
+                id="goalInput"
+                placeholder="I want to become..."
+            >
 
-            <button onclick="checkAnswer(63)">63</button>
-            <button onclick="checkAnswer(72)">72</button>
-            <button onclick="checkAnswer(81)">81</button>
+            <button onclick="saveGoal()" class="btn">
+                Save My Goal
+            </button>
 
-            <div id="result" class="result"></div>
+            <p id="goalDisplay"></p>
 
         </div>
 
     </section>
 
-<!-- Explore STEM Sister -->
-<section>
+    <!-- Badge -->
+    <section>
 
-    <h2 class="section-title">
-        Explore STEM Sister
-    </h2>
+        <h2 class="section-title">
+            🏆 STEM Sister Explorer Badge
+        </h2>
 
-    <div class="grid">
+        <div class="badge-box">
 
-        about.html
-            <div class="card">
-                <div class="icon">👩🏽‍💻</div>
-                <h3>About STEM Sister</h3>
-                <p>
-                    Learn about our mission, vision and founder.
-                </p>
-            </div>
-        </a>
+            <p>
+                Complete activities and earn your first badge.
+            </p>
 
-        <a href="textbooks.html" class="card-link">
-            <div class="card">
-                <div class="icon">📚</div>
-                <h3>Learning Resources</h3>
-                <p>
-                    Access textbooks, notes and study guides.
-                </p>
-            </div>
-        </a>
+            <button class="btn" onclick="earnBadge()">
+                Claim Badge
+            </button>
 
-        <a href="tests.html" class="card-link">
-            <div class="card">
-                <div class="icon">📝</div>
-                <h3>STEM Challenges</h3>
-                <p>
-                    Test your knowledge and build confidence.
-                </p>
-            </div>
-        </a>
+            <div id="badgeDisplay"></div>
 
-        <a href="discussions.html" class="card-link">
-            <div class="card">
-                <div class="icon">💬</div>
-                <h3>Community Discussions</h3>
-                <p>
-                    Ask questions, collaborate and learn together.
-                </p>
-            </div>
-        </a>
+        </div>
 
-        <a href="wellness.html" class="card-link">
-            <div class="card">
-                <div class="icon">💜</div>
-                <h3>Wellness Hub</h3>
-                <p>
-                    Discover self-care, confidence and wellbeing resources.
-                </p>
-            </div>
-        </a>
+    </section>
 
-    </div>
+    <!-- Quick Quiz -->
+    <section>
 
-</section>
-    
-    <!-- Call to Action -->
+        <h2 class="section-title">
+            Quick STEM Challenge
+        </h2>
+
+        <div class="quiz">
+
+            <h3>What is 8 × 9 ?</h3>
+
+            <button onclick="checkAnswer(63)">
+                63
+            </button>
+
+            <button onclick="checkAnswer(72)">
+                72
+            </button>
+
+            <button onclick="checkAnswer(81)">
+                81
+            </button>
+
+            <div id="result"></div>
+
+        </div>
+
+    </section>
+
+    <!-- CTA -->
     <section class="cta">
 
-        <h2>Ready To Begin Your STEM Journey?</h2>
+        <h2>
+            Ready To Begin Your STEM Journey?
+        </h2>
 
         <p>
-            The future needs scientists, innovators, engineers, coders,
-            researchers and leaders. Why not start today?
+            Scientists, engineers, innovators and leaders all started with
+            curiosity. Start your journey today.
         </p>
 
         <a href="textbooks.html" class="btn">
@@ -352,15 +400,14 @@
         <h3>🌟 STEM Sister</h3>
 
         <p>
-            Empowering girls through education, leadership,
-            wellbeing and opportunity.
+            Empowering girls through education, leadership and opportunity.
         </p>
 
         <p>
             Together we learn, dream, innovate and inspire.
         </p>
 
-        <p>&copy; 2026 STEM Sister. All Rights Reserved.</p>
+<p>&copy; 2026 STEM Sister. All Rights Reserved.</p>
 
         <div class="made-by">
             Made with ❤️ by <strong>Rhia Singh</strong>
@@ -370,55 +417,216 @@
 
     <script>
 
-        const facts = [
+/* =========================================
+   STEM FACT GENERATOR
+========================================= */
 
-            "Ada Lovelace is often considered the world's first computer programmer.",
+const facts = [
+    "Ada Lovelace is often considered the world's first computer programmer.",
+    "Mae Jemison became the first African-American woman in space in 1992.",
+    "The human brain contains approximately 86 billion neurons.",
+    "More than 70% of Earth is covered by water.",
+    "Coding powers apps, websites, robots and spacecraft.",
+    "Engineering combines creativity and problem-solving.",
+    "Science helps us understand our world through discovery."
+];
 
-            "The human brain contains approximately 86 billion neurons.",
+function generateFact() {
 
-            "Mae Jemison became the first African-American woman in space in 1992.",
+    const random =
+        Math.floor(Math.random() * facts.length);
 
-            "More than 70% of Earth's surface is covered by water.",
-
-            "Coding is used in everything from apps and websites to robots and spacecraft.",
-
-            "Engineering combines creativity and problem-solving to improve lives.",
-
-            "Science helps us understand the world through observation and discovery."
-
-        ];
-
-        function generateFact() {
-
-            const random =
-                Math.floor(Math.random() * facts.length);
-
-            document.getElementById("fact").innerHTML =
-                facts[random];
-        }
-
-        function saveGoal() {
-
-            const goal =
-                document.getElementById("goalInput").value;
-
-if (goal === "") {
- 
-document.getElementById("goalDisplay").innerHTML =
-"🌟 Every great achievement starts with a dream. Enter your goal above!";
- 
-} else {
- 
-document.getElementById("goalDisplay").innerHTML =
-"🚀 Fantastic! Your STEM goal is <strong>" +
-goal +
-"</strong>. Remember: every scientist, engineer, doctor, and innovator started exactly where you are today.";
- 
+    document.getElementById("fact").innerHTML =
+        facts[random];
 }
- 
+
+/* =========================================
+   GOAL SETTER
+========================================= */
+
+function saveGoal() {
+
+    const goal =
+        document.getElementById("goalInput").value;
+
+    if (goal === "") {
+
+        document.getElementById("goalDisplay").innerHTML =
+            "🌟 Every great achievement starts with a dream. Enter your goal above!";
+
+    } else {
+
+        localStorage.setItem("stemGoal", goal);
+
+        document.getElementById("goalDisplay").innerHTML =
+            "🚀 Fantastic! Your STEM goal is <strong>" +
+            goal +
+            "</strong>. Keep working towards it every day!";
+    }
 }
- 
+
+/* Load saved goal */
+
+window.addEventListener("load", () => {
+
+    const savedGoal =
+        localStorage.getItem("stemGoal");
+
+    if(savedGoal){
+
+        document.getElementById("goalDisplay").innerHTML =
+            "🚀 Your saved goal is <strong>" +
+            savedGoal +
+            "</strong>. Keep believing in yourself!";
+    }
+});
+
+/* =========================================
+   CAREER MATCHER
+========================================= */
+
+function careerMatch(type){
+
+    let result = "";
+
+    if(type === "creative"){
+        result = "🎮 You could become a Game Designer, UX Designer or Robotics Engineer!";
+    }
+
+    if(type === "logical"){
+        result = "💻 You could become a Software Engineer or Cybersecurity Expert!";
+    }
+
+    if(type === "helpful"){
+        result = "👩🏽‍⚕️ You could become a Doctor, Biomedical Scientist or Teacher!";
+    }
+
+    if(type === "curious"){
+        result = "🚀 You could become a Scientist, Astronaut or Researcher!";
+    }
+
+    document.getElementById("careerResult").innerHTML =
+        result;
+}
+
+/* =========================================
+   MOTIVATION GENERATOR
+========================================= */
+
+const motivation = [
+
+    "Believe you can and you're halfway there.",
+    "Your future self is cheering for you.",
+    "Smart girls change the world.",
+    "Every expert was once a beginner.",
+    "Today's effort creates tomorrow's success.",
+    "You are capable of amazing things.",
+    "Never underestimate your potential.",
+    "Dream big and work hard."
+];
+
+function motivateMe(){
+
+    const random =
+        Math.floor(Math.random() * motivation.length);
+
+    document.getElementById("motivationText").innerHTML =
+        motivation[random];
+}
+
+/* =========================================
+   STEM JOKE GENERATOR
+========================================= */
+
+const jokes = [
+
+    "Why do programmers prefer dark mode? Because light attracts bugs! 🐛",
+    "Why can't scientists trust atoms? Because they make up everything! ⚛️",
+    "Why did the robot go on holiday? It needed to recharge! 🤖",
+    "Why was the maths book sad? It had too many problems! 😄",
+    "Why was the computer cold? It left its Windows open! 💻"
+];
+
+function generateJoke(){
+
+    const random =
+        Math.floor(Math.random() * jokes.length);
+
+    document.getElementById("joke").innerHTML =
+        jokes[random];
+}
+
+/* =========================================
+   STEM BADGE
+========================================= */
+
+function earnBadge(){
+
+    document.getElementById("badgeDisplay").innerHTML =
+
+        `<div style="
+            margin-top:20px;
+            padding:20px;
+            border-radius:15px;
+            background:linear-gradient(135deg,#ff8bd7,#8b5cf6);
+            color:white;
+        ">
+
+            <h3>🏆 STEM Sister Explorer Badge Unlocked!</h3>
+
+            <p>
+                Congratulations! Keep exploring, learning and inspiring others.
+            </p>
+
+        </div>`;
+}
+
+/* =========================================
+   QUIZ
+========================================= */
+
+function checkAnswer(answer){
+
+    if(answer === 72){
+
+        document.getElementById("result").innerHTML =
+            "✅ Correct! Great job STEM Superstar!";
+
+        document.getElementById("result").style.color =
+            "green";
+
+    } else {
+
+        document.getElementById("result").innerHTML =
+            "❌ Not quite. Try again!";
+
+        document.getElementById("result").style.color =
+            "crimson";
+    }
+}
+
+/* =========================================
+   COUNTER ANIMATION
+========================================= */
+
+let number = 0;
+
+const counter =
+setInterval(() => {
+
+    number += 25;
+
+    document.getElementById("counter").innerHTML =
+        number.toLocaleString();
+
+    if(number >= 5000){
+
+        clearInterval(counter);
+    }
+
+}, 20);
+
 </script>
- 
+
 </body>
 </html>
