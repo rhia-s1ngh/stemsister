@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* =========================
+   STEM SISTER STYLES
+   ========================= */
+
+:root{
+    --purple:#8b5cf6;
+    --pink:#ec4899;
+    --blue:#3b82f6;
+    --yellow:#facc15;
+    --teal:#14b8a6;
+    --bg:#fffdf8;
+    --dark:#1f2937;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--bg);
+    color:var(--dark);
+    line-height:1.6;
+    overflow-x:hidden;
+}
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 8%;
+
+    background:#fff;
+    box-shadow:0 2px 15px rgba(0,0,0,0.08);
+}
+
+.logo{
+    font-size:1.8rem;
+    font-weight:800;
+    color:var(--purple);
+}
+
+nav ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+nav a{
+    text-decoration:none;
+    color:var(--dark);
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:var(--pink);
+}
+
+/* =========================
+   HERO SECTION
+   ========================= */
+
+.hero{
+    min-height:90vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    padding:60px 8%;
+
+    background:linear-gradient(
+        135deg,
+        #8b5cf6,
+        #ec4899,
+        #3b82f6
+    );
+
+    color:white;
+}
+
+.hero-content h1{
+    font-size:4.5rem;
+    margin-bottom:20px;
+    animation:float 5s ease-in-out infinite;
+}
+
+.hero-content p{
+    max-width:850px;
+    margin:auto;
+    font-size:1.2rem;
+    margin-bottom:35px;
+}
+
+/* =========================
+   BUTTONS
+   ========================= */
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+
+    padding:15px 32px;
+    margin:10px;
+
+    border-radius:50px;
+    font-weight:700;
+
+    transition:0.3s;
+}
+
+.btn-primary{
+    background:white;
+    color:var(--purple);
+}
+
+.btn-secondary{
+    background:var(--yellow);
+    color:#222;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+}
+
+/* =========================
+   SECTIONS
+   ========================= */
+
+section{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    color:var(--purple);
+    font-size:2.5rem;
+    margin-bottom:50px;
+}
+
+/* =========================
+   GRID LAYOUT
+   ========================= */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:25px;
+}
+
+/* =========================
+   CARDS
+   ========================= */
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.icon{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.card h3{
+    color:var(--purple);
+    margin-bottom:10px;
+}
+
+/* =========================
+   QUOTE SECTION
+   ========================= */
+
+.quote{
+    background:#f3edff;
+}
+
+.quote h2{
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+    font-size:2rem;
+}
+
+/* =========================
+   LEARNING PATHS
+   ========================= */
+
+.path{
+    padding:30px;
+    border-radius:25px;
+    color:white;
+    transition:0.3s;
+}
+
+.path:hover{
+    transform:scale(1.05);
+}
+
+.p1{
+    background:#14b8a6;
+}
+
+.p2{
+    background:#ec4899;
+}
+
+.p3{
+    background:#3b82f6;
+}
+
+.p4{
+    background:#8b5cf6;
+}
+
+/* =========================
+   ROLE MODELS
+   ========================= */
+
+.role-model{
+    background:white;
+    padding:25px;
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+
+    transition:0.3s;
+}
+
+.role-model:hover{
+    transform:translateY(-8px);
+}
+
+/* =========================
+   QUIZ
+   ========================= */
+
+.quiz{
+    background:white;
+
+    max-width:700px;
+    margin:auto;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+
+    text-align:center;
+}
+
+.quiz h3{
+    margin-bottom:20px;
+}
+
+.quiz button{
+    width:100%;
+
+    padding:15px;
+    margin-top:10px;
+
+    border:none;
+    border-radius:12px;
+
+    background:#f3f4f6;
+
+    font-size:1rem;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.quiz button:hover{
+    background:#e5e7eb;
+}
+
+.result{
+    margin-top:20px;
+    font-size:1.2rem;
+    font-weight:700;
+}
+
+/* =========================
+   DREAM WALL
+   ========================= */
+
+.dream{
+    background:white;
+
+    padding:25px;
+    border-radius:20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+
+    font-style:italic;
+
+    transition:0.3s;
+}
+
+.dream:hover{
+    transform:translateY(-5px);
+}
+
+/* =========================
+   QUICK LINKS
+   ========================= */
+
+.quick-links{
+    background:#faf7ff;
+}
+
+.quick-links a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.quick-links .card:hover{
+    background:var(--purple);
+    color:white;
+}
+
+.quick-links .card:hover h3{
+    color:white;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer{
+    background:#1f2937;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+footer h3{
+    margin-bottom:15px;
+}
+
+footer p{
+    margin-bottom:10px;
+}
+
+footer a{
+    color:var(--yellow);
+    text-decoration:none;
+}
+
+footer a:hover{
+    color:white;
+}
+
+.made-by{
+    margin-top:25px;
+    font-size:1rem;
+    font-weight:600;
+    color:white;
+}
+
+.made-by strong{
+    color:var(--pink);
+}
+
+/* =========================
+   ANIMATIONS
+   ========================= */
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-15px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+/* =========================
+   SCROLLBAR
+   ========================= */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#f3f4f6;
+}
+
+::-webkit-scrollbar-thumb{
+    background:var(--purple);
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:var(--pink);
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+   ========================= */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    .hero-content h1{
+        font-size:2.8rem;
+    }
+
+    .hero-content p{
+        font-size:1rem;
+    }
+
+    .section-title{
+        font-size:2rem;
+    }
+
+    .btn{
+        display:block;
+        width:100%;
+        max-width:300px;
+        margin:10px auto;
+    }
+
+}
