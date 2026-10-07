@@ -730,3 +730,78 @@ footer p{
 
     nav{
        
+/* =========================
+   FOUNDER SHOWCASE
+   ========================= */
+
+.founder-showcase{
+    display:grid;
+    grid-template-columns:300px 1fr;
+    gap:30px;
+    align-items:start;
+}
+
+.founder-avatar{
+    background:
+    linear-gradient(
+        135deg,
+        var(--purple),
+        var(--pink)
+    );
+
+    color:white;
+
+    padding:30px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+}
+
+.avatar-circle{
+    width:130px;
+    height:130px;
+
+    margin:auto auto 20px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:white;
+
+    font-size:4rem;
+}
+
+.founder-role{
+    opacity:.9;
+    margin-top:8px;
+}
+
+.founder-tags{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+
+    margin-top:20px;
+}
+
+.founder-tags span{
+    background:rgba(255,255,255,.18);
+    padding:8px 12px;
+    border-radius:50px;
+    font-size:.85rem;
+}
+
+@media(max-width:768px){
+
+    .founder-showcase{
+        grid-template-columns:1fr;
+    }
+
+}
