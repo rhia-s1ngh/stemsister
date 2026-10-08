@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STEM Sister | Learn. Dream. Innovate.</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STEM Sister | Learn. Dream. Innovate.</title>
+
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<!-- Navigation -->
+<!-- NAVIGATION -->
 
 <nav>
 
@@ -26,11 +27,24 @@
         <li><a href="wellness.html">Wellness Hub</a></li>
     </ul>
 
+    <button id="darkModeBtn" class="btn">
+        🌙
+    </button>
+
 </nav>
 
-<!-- Hero -->
+<!-- HERO -->
 
 <section class="hero">
+
+    <div class="floating-icons">
+        <span>🚀</span>
+        <span>🤖</span>
+        <span>🔬</span>
+        <span>🧬</span>
+        <span>💻</span>
+        <span>⚛️</span>
+    </div>
 
     <div class="hero-content">
 
@@ -44,7 +58,7 @@
 
         <p>
             Explore exciting careers, discover inspiring role models,
-            build confidence, challenge yourself, and unlock the world
+            build confidence, challenge yourself and unlock the world
             of Science, Technology, Engineering and Mathematics.
         </p>
 
@@ -64,9 +78,43 @@
 
 </section>
 
-<!-- What We Offer -->
+<!-- STATS -->
 
-<section>
+<section class="reveal">
+
+    <h2 class="section-title">
+        🌍 Inspiring Future Innovators
+    </h2>
+
+    <div class="stats">
+
+        <div class="stat-card">
+            <h2>500+</h2>
+            <p>Learning Resources</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>100+</h2>
+            <p>Challenges</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>50+</h2>
+            <p>Career Paths</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>∞</h2>
+            <p>Dreams Supported</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- WHAT WE OFFER -->
+
+<section class="reveal">
 
     <h2 class="section-title">
         What STEM Sister Offers
@@ -75,45 +123,64 @@
     <div class="grid">
 
         <div class="card">
+
             <div class="icon">📚</div>
+
             <h3>Learning Resources</h3>
+
             <p>
-                Access study guides, notes, resources and materials designed
-                to help you succeed.
+                Access study guides, notes, resources and materials
+                designed to help you succeed.
             </p>
+
         </div>
 
         <div class="card">
+
             <div class="icon">🚀</div>
+
             <h3>STEM Challenges</h3>
+
             <p>
-                Test your skills with quizzes, activities and interactive learning.
+                Test your skills with quizzes, activities and
+                interactive learning.
             </p>
+
         </div>
 
         <div class="card">
+
             <div class="icon">💬</div>
+
             <h3>Community</h3>
+
             <p>
-                Connect with learners, share ideas and grow together.
+                Connect with learners, share ideas and
+                grow together.
             </p>
+
         </div>
 
         <div class="card">
+
             <div class="icon">💜</div>
+
             <h3>Wellness Hub</h3>
+
             <p>
-                Discover confidence-building resources, self-care and motivation.
+                Confidence-building resources, motivation,
+                wellbeing and support.
             </p>
+
         </div>
 
     </div>
 
 </section>
 
-<!-- Journey -->
+<!-- STEM JOURNEY -->
 
-<section>
+<section class="reveal">
 
     <h2 class="section-title">
         🚀 Your STEM Journey
@@ -122,46 +189,46 @@
     <div class="journey">
 
         <div class="step">🌱 Dream</div>
-
         <div class="step">📚 Learn</div>
-
         <div class="step">🧠 Explore</div>
-
         <div class="step">🚀 Innovate</div>
-
         <div class="step">🌟 Lead</div>
 
     </div>
 
 </section>
 
-<!-- Featured Role Model -->
+<!-- ROLE MODEL -->
 
-<section>
+<section class="reveal">
 
     <h2 class="section-title">
-        🌟 Featured STEM Role Model
+        🌟 STEM Role Model Generator
     </h2>
 
     <div class="card">
 
-        <h3>
+        <h3 id="scientistName">
             👩‍🚀 Mae Jemison
         </h3>
 
-        <p>
-            Mae Jemison became the first African-American woman to travel into
-            space in 1992. She is a physician, engineer and astronaut whose
-            journey continues to inspire young women around the world.
+        <p id="scientistInfo">
+            First African-American woman to travel into space.
         </p>
+
+        <br>
+
+        <button class="btn" onclick="newRoleModel()">
+            Show Another Role Model
+        </button>
 
     </div>
 
 </section>
 
-<!-- Interactive STEM Zone -->
+<!-- INTERACTIVE STEM ZONE -->
 
-<section>
+<section class="reveal">
 
     <h2 class="section-title">
         🎮 Interactive STEM Zone
@@ -195,11 +262,13 @@
 
         <div class="card">
 
-            <h3>✨ STEM Fact</h3>
+            <h3>✨ STEM Fact Generator</h3>
 
             <p id="fact">
                 Discover something amazing about STEM.
             </p>
+
+            <br>
 
             <button onclick="generateFact()" class="btn">
                 Show Fact
@@ -212,8 +281,10 @@
             <h3>💜 Daily Motivation</h3>
 
             <p id="motivationText">
-                Need some inspiration today?
+                Need inspiration today?
             </p>
+
+            <br>
 
             <button onclick="motivateMe()" class="btn">
                 Inspire Me
@@ -225,9 +296,33 @@
 
 </section>
 
-<!-- My STEM Future -->
+<!-- DAILY CHALLENGE -->
 
-<section>
+<section class="reveal">
+
+    <h2 class="section-title">
+        🏆 Daily STEM Challenge
+    </h2>
+
+    <div class="card">
+
+        <p id="dailyChallenge">
+            Can you build a paper bridge that can hold a book?
+        </p>
+
+        <br>
+
+        <button class="btn" onclick="newChallenge()">
+            New Challenge
+        </button>
+
+    </div>
+
+</section>
+
+<!-- MY STEM FUTURE -->
+
+<section class="reveal">
 
     <h2 class="section-title">
         🌟 My STEM Future
@@ -241,11 +336,14 @@
                 My Future Goal
             </h3>
 
+            <br>
+
             <input
-                type="text"
-                id="goalInput"
-                placeholder="I want to become..."
-            >
+            type="text"
+            id="goalInput"
+            placeholder="I want to become...">
+
+            <br><br>
 
             <button onclick="saveGoal()" class="btn">
                 Save Goal
@@ -261,9 +359,13 @@
                 Quick STEM Challenge
             </h3>
 
+            <br>
+
             <p>
-                What is 8 × 9?
+                What is 8 × 9 ?
             </p>
+
+            <br>
 
             <button onclick="checkAnswer(63)">63</button>
             <button onclick="checkAnswer(72)">72</button>
@@ -286,8 +388,8 @@
     </h2>
 
     <p>
-        Every scientist, engineer, innovator and leader started with curiosity.
-        Your journey starts today.
+        Every scientist, engineer, inventor and leader started
+        with curiosity. Your journey starts today.
     </p>
 
     <a href="textbooks.html" class="btn">
@@ -296,7 +398,7 @@
 
 </section>
 
-<!-- Footer -->
+<!-- FOOTER -->
 
 <footer>
 
@@ -305,15 +407,18 @@
     </h3>
 
     <p>
-        Empowering girls through education, leadership and opportunity.
+        Empowering girls through Science, Technology,
+        Engineering and Mathematics.
     </p>
 
     <p>
         Together we learn, dream, innovate and inspire.
     </p>
 
+    <br>
+
     <p>
-        &copy; 2026 STEM Sister. All Rights Reserved.
+        © 2026 STEM Sister. All Rights Reserved.
     </p>
 
     <div class="made-by">
@@ -324,120 +429,244 @@
 
 <script>
 
+/* DARK MODE */
+
+document
+.getElementById("darkModeBtn")
+.addEventListener("click",()=>{
+
+document.body.classList.toggle("dark");
+
+});
+
 /* STEM FACTS */
 
 const facts = [
-    "Ada Lovelace is considered the world's first computer programmer.",
-    "More than 70% of Earth is covered by water.",
-    "The human brain contains approximately 86 billion neurons.",
-    "Coding powers websites, apps, robots and spacecraft.",
-    "Engineering combines creativity with problem-solving."
+
+"Ada Lovelace is considered the world's first computer programmer.",
+
+"More than 70% of Earth is covered by water.",
+
+"The human brain contains approximately 86 billion neurons.",
+
+"Coding powers websites, apps, robots and spacecraft.",
+
+"Engineering combines creativity with problem-solving."
+
 ];
 
 function generateFact(){
 
-    const random =
-    Math.floor(Math.random()*facts.length);
+const random =
+Math.floor(Math.random()*facts.length);
 
-    document.getElementById("fact").innerHTML =
-    facts[random];
+document.getElementById("fact").innerHTML =
+facts[random];
+
 }
 
 /* MOTIVATION */
 
 const motivation = [
 
-    "Believe you can and you're halfway there.",
-    "Every expert was once a beginner.",
-    "You are capable of amazing things.",
-    "Dream big and work hard.",
-    "Your future self is cheering for you."
+"Believe you can and you're halfway there.",
+
+"Every expert was once a beginner.",
+
+"You are capable of amazing things.",
+
+"Dream big and work hard.",
+
+"Your future self is cheering for you."
 
 ];
 
 function motivateMe(){
 
-    const random =
-    Math.floor(Math.random()*motivation.length);
+const random =
+Math.floor(Math.random()*motivation.length);
 
-    document.getElementById("motivationText").innerHTML =
-    motivation[random];
+document.getElementById("motivationText").innerHTML =
+motivation[random];
+
+}
+
+/* ROLE MODELS */
+
+const scientists = [
+
+{
+name:"👩‍🚀 Mae Jemison",
+info:"First African-American woman in space."
+},
+
+{
+name:"🧪 Marie Curie",
+info:"First woman to win a Nobel Prize."
+},
+
+{
+name:"💻 Grace Hopper",
+info:"Computer science pioneer."
+},
+
+{
+name:"🚀 Katherine Johnson",
+info:"NASA mathematician who helped launch space missions."
+},
+
+{
+name:"🧬 Rosalind Franklin",
+info:"Contributed to the discovery of DNA structure."
+}
+
+];
+
+function newRoleModel(){
+
+const random =
+Math.floor(Math.random()*scientists.length);
+
+document.getElementById("scientistName").innerHTML =
+scientists[random].name;
+
+document.getElementById("scientistInfo").innerHTML =
+scientists[random].info;
+
 }
 
 /* CAREER MATCH */
 
 function careerMatch(type){
 
-    let result = "";
+let result = "";
 
-    if(type === "creative"){
-        result = "🎨 You might enjoy Engineering, Design Technology or Robotics.";
-    }
-
-    if(type === "logical"){
-        result = "💻 Software Engineering or Cybersecurity could be perfect for you.";
-    }
-
-    if(type === "curious"){
-        result = "🔬 You could become a Scientist, Researcher or Astronaut.";
-    }
-
-    document.getElementById("careerResult").innerHTML =
-    result;
+if(type==="creative"){
+result="🎨 Engineering, Robotics or Design Technology could be perfect for you.";
 }
 
-/* GOAL SAVE */
+if(type==="logical"){
+result="💻 Software Engineering, Cybersecurity or Data Science may suit you.";
+}
+
+if(type==="curious"){
+result="🔬 Scientist, Researcher or Astronaut could be your future.";
+}
+
+document.getElementById("careerResult").innerHTML =
+result;
+
+}
+
+/* STEM GOAL */
 
 function saveGoal(){
 
-    const goal =
-    document.getElementById("goalInput").value;
+const goal =
+document.getElementById("goalInput").value;
 
-    if(goal.trim() === ""){
+if(goal.trim()===""){
 
-        document.getElementById("goalDisplay").innerHTML =
-        "🌟 Enter a future STEM goal.";
+document.getElementById("goalDisplay").innerHTML =
+"🌟 Enter a future STEM goal.";
 
-    }else{
+}else{
 
-        localStorage.setItem("stemGoal", goal);
+localStorage.setItem("stemGoal",goal);
 
-        document.getElementById("goalDisplay").innerHTML =
-        "🚀 Your goal: <strong>" + goal + "</strong>";
-    }
+document.getElementById("goalDisplay").innerHTML =
+"🚀 Your goal: <strong>" + goal + "</strong>";
+
 }
 
-/* LOAD GOAL */
+}
 
 window.onload = () => {
 
-    const savedGoal =
-    localStorage.getItem("stemGoal");
+const savedGoal =
+localStorage.getItem("stemGoal");
 
-    if(savedGoal){
+if(savedGoal){
 
-        document.getElementById("goalDisplay").innerHTML =
-        "🚀 Your goal: <strong>" + savedGoal + "</strong>";
-    }
+document.getElementById("goalDisplay").innerHTML =
+"🚀 Your goal: <strong>" + savedGoal + "</strong>";
+
+}
 
 };
+
+/* DAILY CHALLENGES */
+
+const challenges = [
+
+"Build a paper tower using only one sheet of paper.",
+
+"Create a weather journal for 7 days.",
+
+"Find 5 examples of engineering in your home.",
+
+"Design your dream robot.",
+
+"Observe the night sky and record what you see."
+
+];
+
+function newChallenge(){
+
+const random =
+Math.floor(Math.random()*challenges.length);
+
+document.getElementById("dailyChallenge").innerHTML =
+challenges[random];
+
+}
 
 /* QUIZ */
 
 function checkAnswer(answer){
 
-    if(answer === 72){
+if(answer===72){
 
-        document.getElementById("result").innerHTML =
-        "✅ Correct! Great job!";
+document.getElementById("result").innerHTML =
+"✅ Correct! Great job!";
 
-    }else{
+}else{
 
-        document.getElementById("result").innerHTML =
-        "❌ Not quite. Try again.";
-    }
+document.getElementById("result").innerHTML =
+"❌ Not quite. Try again.";
 
 }
+
+}
+
+/* SCROLL REVEAL */
+
+const reveals =
+document.querySelectorAll(".reveal");
+
+function revealSections(){
+
+reveals.forEach(section=>{
+
+const top =
+section.getBoundingClientRect().top;
+
+if(top < window.innerHeight - 100){
+
+section.classList.add("active");
+
+}
+
+});
+
+}
+
+window.addEventListener(
+"scroll",
+revealSections
+);
+
+revealSections();
 
 </script>
 
