@@ -645,4 +645,86 @@ const facts = [
 function newFact(){
 
     const random =
-    Math.floor(Math.random() * facts.
+    Math.floor(Math.random() * facts.length);
+
+    document.getElementById("factText").innerHTML =
+    facts[random];
+
+}
+
+/* ROLE MODELS */
+
+const scientists = [
+
+{
+name:"👩‍🚀 Mae Jemison",
+info:"First African-American woman in space."
+},
+
+{
+name:"🧪 Marie Curie",
+info:"First woman to win a Nobel Prize."
+},
+
+{
+name:"💻 Grace Hopper",
+info:"Computer science pioneer."
+},
+
+{
+name:"🚀 Katherine Johnson",
+info:"NASA mathematician who helped launch space missions."
+},
+
+{
+name:"🧬 Rosalind Franklin",
+info:"Contributed to discovering DNA structure."
+}
+
+];
+
+function newRoleModel(){
+
+    const random =
+    Math.floor(Math.random() * scientists.length);
+
+    document.getElementById("scientistName").innerHTML =
+    scientists[random].name;
+
+    document.getElementById("scientistInfo").innerHTML =
+    scientists[random].info;
+
+}
+
+/* SCROLL ANIMATION */
+
+const reveals =
+document.queryS*lectorAll(".reveal");
+
+function re*ealSections(){
+
+    reveals.forEac*(section => {
+
+        const top =*        section.getBoundingClientR*ct().top;
+
+        if(top < window*innerHeight - 100){
+
+            s*ction.classList.add("active");
+
+  *     }
+
+    });
+
+}
+
+window.addEven*Listener(
+    "scroll",
+    reveal*ections
+);
+
+revealSections();
+
+</script>
+
+</body>
+</html>
