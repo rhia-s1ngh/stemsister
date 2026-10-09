@@ -20,11 +20,11 @@
 
     <ul class="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About STEM Sister</a></li>
-        <li><a href="textbooks.html">Learning Resources</a></li>
-        <li><a href="tests.html">STEM Challenges</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="textbooks.html">Resources</a></li>
+        <li><a href="tests.html">Challenges</a></li>
         <li><a href="discussions.html">Community</a></li>
-        <li><a href="wellness.html">Wellness Hub</a></li>
+        <li><a href="wellness.html">Wellness</a></li>
     </ul>
 
     <button id="darkModeBtn" class="btn">
@@ -38,28 +38,32 @@
 <section class="hero">
 
     <div class="floating-icons">
+
         <span>🚀</span>
-        <span>🤖</span>
+        <span>💻</span>
         <span>🔬</span>
         <span>🧬</span>
-        <span>💻</span>
         <span>⚛️</span>
+        <span>🤖</span>
+
     </div>
 
     <div class="hero-content">
 
         <span class="tagline">
-            🌟 A Place Where Girls Learn, Create & Lead
+            🌟 Empowering Future Women Innovators
         </span>
 
         <h1>
-            The Future Needs Girls In STEM
+            Dream. Learn. Innovate.
+            Build The Future Through STEM.
         </h1>
 
         <p>
-            Explore exciting careers, discover inspiring role models,
-            build confidence, challenge yourself and unlock the world
-            of Science, Technology, Engineering and Mathematics.
+            Discover exciting STEM careers, develop confidence,
+            access learning resources and explore opportunities
+            that help you become a future scientist, engineer,
+            programmer, innovator or leader.
         </p>
 
         <div class="hero-buttons">
@@ -68,8 +72,8 @@
                 📚 Start Learning
             </a>
 
-            <a href="about.html" class="btn secondary">
-                🌟 Learn About Us
+            <a href="tests.html" class="btn secondary">
+                🚀 Explore Challenges
             </a>
 
         </div>
@@ -78,198 +82,24 @@
 
 </section>
 
-<!-- ACHIEVEMENT BANNER -->
+<!-- FEATURE STRIP -->
 
-<section class="achievement-banner">
-    <div class="banner-content">
-        🌟 Inspiring Future Innovators Every Day • 🚀 New STEM Challenge Available • 💜 Dream Big, Build Bigger
-    </div>
-</section>
-
-<!-- STEM PERSONALITY QUIZ -->
-
-<section class="reveal">
-
-    <h2 class="section-title">
-        🧠 What Kind Of STEM Innovator Are You?
-    </h2>
+<section class="feature-strip">
 
     <div class="card">
-
-        <p>
-            Choose what excites you most:
-        </p>
-
-        <br>
-
-        <button class="btn" onclick="stemPersonality('technology')">
-            💻 Technology
-        </button>
-
-        <button class="btn" onclick="stemPersonality('space')">
-            🚀 Space
-        </button>
-
-        <button class="btn" onclick="stemPersonality('science')">
-            🔬 Science
-        </button>
-
-        <button class="btn" onclick="stemPersonality('engineering')">
-            ⚙️ Engineering
-        </button>
-
-        <br><br>
-
-        <p id="personalityResult"></p>
-
+        📚 500+ Learning Resources
     </div>
-
-</section>
-
-<!-- CAREER EXPLORER -->
-
-<section class="reveal">
-
-    <h2 class="section-title">
-        🌟 STEM Career Explorer
-    </h2>
 
     <div class="card">
-
-        <select id="careerSelect">
-
-            <option value="">
-                Select An Interest
-            </option>
-
-            <option value="coding">
-                Coding
-            </option>
-
-            <option value="space">
-                Space
-            </option>
-
-            <option value="medicine">
-                Medicine
-            </option>
-
-            <option value="engineering">
-                Engineering
-            </option>
-
-        </select>
-
-        <br><br>
-
-        <button class="btn" onclick="exploreCareer()">
-            Explore Career
-        </button>
-
-        <br><br>
-
-        <p id="careerExplorerResult"></p>
-
+        🚀 Interactive Challenges
     </div>
-
-</section>
-
-<!-- PROGRESS TRACKER -->
-
-<section class="reveal">
-
-    <h2 class="section-title">
-        🏆 STEM Progress Tracker
-    </h2>
 
     <div class="card">
-
-        <p>
-            Your STEM Journey Progress
-        </p>
-
-        <br>
-
-        <div class="progress-container">
-            <div id="progressBar"></div>
-        </div>
-
-        <br>
-
-        <button class="btn" onclick="increaseProgress()">
-            Complete Challenge
-        </button>
-
-        <br><br>
-
-        <p id="progressText">
-            0% Complete
-        </p>
-
+        💬 Supportive Community
     </div>
 
-</section>
-
-<!-- STEM BADGES -->
-
-<section class="reveal">
-
-    <h2 class="section-title">
-        🎖️ Earn STEM Badges
-    </h2>
-
-    <div class="grid">
-
-        <div class="card">
-            🔬 Science Star
-        </div>
-
-        <div class="card">
-            🚀 Space Explorer
-        </div>
-
-        <div class="card">
-            💻 Coding Rookie
-        </div>
-
-        <div class="card">
-            ⚙️ Future Engineer
-        </div>
-
-    </div>
-
-</section>
-
-<!-- STATS -->
-
-<section class="reveal">
-
-    <h2 class="section-title">
-        🌍 Inspiring Future Innovators
-    </h2>
-
-    <div class="stats">
-
-        <div class="stat-card">
-            <h2>500+</h2>
-            <p>Learning Resources</p>
-        </div>
-
-        <div class="stat-card">
-            <h2>100+</h2>
-            <p>Challenges</p>
-        </div>
-
-        <div class="stat-card">
-            <h2>50+</h2>
-            <p>Career Paths</p>
-        </div>
-
-        <div class="stat-card">
-            <h2>∞</h2>
-            <p>Dreams Supported</p>
-        </div>
-
+    <div class="card">
+        💜 Wellness & Growth
     </div>
 
 </section>
@@ -291,8 +121,9 @@
             <h3>Learning Resources</h3>
 
             <p>
-                Access study guides, notes, resources and materials
-                designed to help you succeed.
+                Access notes, guides, study materials and
+                educational resources designed to help you
+                succeed in STEM subjects.
             </p>
 
         </div>
@@ -304,8 +135,8 @@
             <h3>STEM Challenges</h3>
 
             <p>
-                Test your skills with quizzes, activities and
-                interactive learning.
+                Develop your problem-solving skills through
+                exciting STEM activities, quizzes and challenges.
             </p>
 
         </div>
@@ -317,8 +148,8 @@
             <h3>Community</h3>
 
             <p>
-                Connect with learners, share ideas and
-                grow together.
+                Connect with fellow learners, share ideas and
+                support one another on your STEM journey.
             </p>
 
         </div>
@@ -330,8 +161,8 @@
             <h3>Wellness Hub</h3>
 
             <p>
-                Confidence-building resources, motivation,
-                wellbeing and support.
+                Build confidence, resilience and personal growth
+                through wellbeing and motivational resources.
             </p>
 
         </div>
@@ -340,21 +171,45 @@
 
 </section>
 
-<!-- STEM JOURNEY -->
+<!-- CAREER EXPLORER -->
 
 <section class="reveal">
 
     <h2 class="section-title">
-        🚀 Your STEM Journey
+        🌟 STEM Career Explorer
     </h2>
 
-    <div class="journey">
+    <div class="card">
 
-        <div class="step">🌱 Dream</div>
-        <div class="step">📚 Learn</div>
-        <div class="step">🧠 Explore</div>
-        <div class="step">🚀 Innovate</div>
-        <div class="step">🌟 Lead</div>
+        <h3>
+            Discover Careers That Match Your Interests
+        </h3>
+
+        <br>
+
+        <select id="careerSelect">
+
+            <option value="">Select An Interest</option>
+
+            <option value="coding">Coding</option>
+
+            <option value="space">Space Science</option>
+
+            <option value="medicine">Medicine</option>
+
+            <option value="engineering">Engineering</option>
+
+        </select>
+
+        <br><br>
+
+        <button class="btn" onclick="exploreCareer()">
+            Explore Career
+        </button>
+
+        <br><br>
+
+        <p id="careerExplorerResult"></p>
 
     </div>
 
@@ -365,7 +220,7 @@
 <section class="reveal">
 
     <h2 class="section-title">
-        🌟 STEM Role Model Generator
+        🌟 Role Model Spotlight
     </h2>
 
     <div class="card">
@@ -388,152 +243,79 @@
 
 </section>
 
-<!-- INTERACTIVE STEM ZONE -->
+<!-- STEM JOURNEY -->
 
 <section class="reveal">
 
     <h2 class="section-title">
-        🎮 Interactive STEM Zone
+        🚀 Your STEM Journey
     </h2>
 
-    <div class="grid">
+    <div class="journey">
 
-        <div class="card">
-
-            <h3>🌟 Career Match</h3>
-
-            <p>
-                Which STEM pathway fits your interests?
-            </p>
-
-            <button onclick="careerMatch('creative')" class="btn">
-                Creative
-            </button>
-
-            <button onclick="careerMatch('logical')" class="btn">
-                Logical
-            </button>
-
-            <button onclick="careerMatch('curious')" class="btn">
-                Curious
-            </button>
-
-            <p id="careerResult"></p>
-
+        <div class="step">
+            🌱 Dream
         </div>
 
-        <div class="card">
-
-            <h3>✨ STEM Fact Generator</h3>
-
-            <p id="fact">
-                Discover something amazing about STEM.
-            </p>
-
-            <br>
-
-            <button onclick="generateFact()" class="btn">
-                Show Fact
-            </button>
-
+        <div class="step">
+            📚 Learn
         </div>
 
-        <div class="card">
+        <div class="step">
+            🔬 Explore
+        </div>
 
-            <h3>💜 Daily Motivation</h3>
+        <div class="step">
+            🚀 Create
+        </div>
 
-            <p id="motivationText">
-                Need inspiration today?
-            </p>
-
-            <br>
-
-            <button onclick="motivateMe()" class="btn">
-                Inspire Me
-            </button>
-
+        <div class="step">
+            🌟 Lead
         </div>
 
     </div>
 
 </section>
 
-<!-- DAILY CHALLENGE -->
+<!-- STATS -->
 
 <section class="reveal">
 
     <h2 class="section-title">
-        🏆 Daily STEM Challenge
+        🌍 Inspiring Future Innovators
     </h2>
 
-    <div class="card">
+    <div class="stats">
 
-        <p id="dailyChallenge">
-            Can you build a paper bridge that can hold a book?
-        </p>
+        <div class="stat-card">
 
-        <br>
+            <h2>500+</h2>
 
-        <button class="btn" onclick="newChallenge()">
-            New Challenge
-        </button>
-
-    </div>
-
-</section>
-
-<!-- MY STEM FUTURE -->
-
-<section class="reveal">
-
-    <h2 class="section-title">
-        🌟 My STEM Future
-    </h2>
-
-    <div class="grid">
-
-        <div class="card">
-
-            <h3>
-                My Future Goal
-            </h3>
-
-            <br>
-
-            <input
-            type="text"
-            id="goalInput"
-            placeholder="I want to become...">
-
-            <br><br>
-
-            <button onclick="saveGoal()" class="btn">
-                Save Goal
-            </button>
-
-            <p id="goalDisplay"></p>
+            <p>Learning Resources</p>
 
         </div>
 
-        <div class="card">
+        <div class="stat-card">
 
-            <h3>
-                Quick STEM Challenge
-            </h3>
+            <h2>100+</h2>
 
-            <br>
+            <p>STEM Challenges</p>
 
-            <p>
-                What is 8 × 9 ?
-            </p>
+        </div>
 
-            <br>
+        <div class="stat-card">
 
-            <button onclick="checkAnswer(63)">63</button>
-            <button onclick="checkAnswer(72)">72</button>
-            <button onclick="checkAnswer(81)">81</button>
+            <h2>50+</h2>
 
-            <p id="result"></p>
+            <p>Career Pathways</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2>∞</h2>
+
+            <p>Potential Unlocked</p>
 
         </div>
 
@@ -546,16 +328,18 @@
 <section class="cta">
 
     <h2>
-        Ready To Begin Your STEM Journey?
+        Your Future Starts Today
     </h2>
 
     <p>
-        Every scientist, engineer, inventor and leader started
-        with curiosity. Your journey starts today.
+        Whether your dream is to become a scientist,
+        engineer, doctor, astronaut, programmer or
+        innovator, STEM Sister is here to help you
+        take that first step.
     </p>
 
     <a href="textbooks.html" class="btn">
-        📚 Start Learning Now
+        📚 Start Learning Today
     </a>
 
 </section>
@@ -564,18 +348,42 @@
 
 <footer>
 
-    <h3>
-        🌟 STEM Sister
-    </h3>
+    <div class="footer-grid">
 
-    <p>
-        Empowering girls through Science, Technology,
-        Engineering and Mathematics.
-    </p>
+        <div>
 
-    <p>
-        Together we learn, dream, innovate and inspire.
-    </p>
+            <h3>🌟 STEM Sister</h3>
+
+            <p>
+                Empowering girls through Science,
+                Technology, Engineering and Mathematics.
+            </p>
+
+        </div>
+
+        <div>
+
+            <h4>Explore</h4>
+
+            <p><a href="about.html">About Us</a></p>
+
+            <p><a href="textbooks.html">Resources</a></p>
+
+            <p><a href="tests.html">Challenges</a></p>
+
+        </div>
+
+        <div>
+
+            <h4>Community</h4>
+
+            <p><a href="discussions.html">Community Hub</a></p>
+
+            <p><a href="wellness.html">Wellness Hub</a></p>
+
+        </div>
+
+    </div>
 
     <br>
 
@@ -588,6 +396,7 @@
     </div>
 
 </footer>
+
 
 <script>
 
