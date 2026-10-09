@@ -830,6 +830,105 @@ revealSections
 
 revealSections();
 
+    /* PERSONALITY QUIZ */
+
+function stemPersonality(type){
+
+let result="";
+
+if(type==="technology"){
+result="💻 You are a Tech Creator! Software Engineering could be your future.";
+}
+
+if(type==="space"){
+result="🚀 You are a Space Pioneer! Aerospace careers may suit you.";
+}
+
+if(type==="science"){
+result="🔬 You are a Science Explorer! Research and medicine could be your path.";
+}
+
+if(type==="engineering"){
+result="⚙️ You are a Future Inventor! Engineering is perfect for your creativity.";
+}
+
+document.getElementById("personalityResult").innerHTML=result;
+
+}
+
+/* CAREER EXPLORER */
+
+function exploreCareer(){
+
+const career =
+document.getElementById("careerSelect").value;
+
+let result="";
+
+switch(career){
+
+case "coding":
+result="💻 Software Engineer | Builds apps, websites and technology.";
+break;
+
+case "space":
+result="🚀 Aerospace Engineer | Designs aircraft and spacecraft.";
+break;
+
+case "medicine":
+result="🩺 Biomedical Scientist | Improves healthcare and medicine.";
+break;
+
+case "engineering":
+result="⚙️ Mechanical Engineer | Designs machines and systems.";
+break;
+
+default:
+result="Choose an interest first.";
+}
+
+document.getElementById("careerExplorerResult").innerHTML=result;
+
+}
+
+/* PROGRESS TRACKER */
+
+let progress =
+localStorage.getItem("stemProgress") || 0;
+
+updateProgress();
+
+function increaseProgress(){
+
+if(progress < 100){
+
+progress =
+parseInt(progress) + 10;
+
+localStorage.setItem(
+"stemProgress",
+progress
+);
+
+updateProgress();
+
+}
+
+}
+
+function updateProgress(){
+
+document.getElementById(
+"progressBar"
+).style.width = progress + "%";
+
+document.getElementById(
+"progressText"
+).innerHTML =
+progress + "% Complete";
+
+}
+    
 </script>
 
 </body>
