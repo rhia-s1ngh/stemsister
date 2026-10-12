@@ -949,3 +949,80 @@ footer a:hover{
         font-size:2rem;
     }
 }
+
+/* =========================
+   CLICKABLE CARDS
+========================= */
+
+.card-link{
+    text-decoration:none;
+    color:inherit;
+    display:block;
+    cursor:pointer;
+}
+
+.card-link:hover{
+    text-decoration:none;
+    color:inherit;
+}
+
+.card-link .card,
+.card-link .career-card{
+    height:100%;
+}
+
+.card,
+.career-card{
+    cursor:pointer;
+    position:relative;
+    overflow:hidden;
+}
+
+.card::before,
+.career-card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        135deg,
+        rgba(109,40,217,.02),
+        rgba(219,39,119,.04)
+    );
+    opacity:0;
+    transition:.3s;
+}
+
+.card:hover::before,
+.career-card:hover::before{
+    opacity:1;
+}
+
+.card:hover,
+.career-card:hover{
+    transform:translateY(-10px) scale(1.02);
+    box-shadow:var(--shadow-hover);
+}
+
+/* =========================
+   ACTIVE EFFECT
+========================= */
+
+.card:active,
+.career-card:active{
+    transform:translateY(-3px) scale(.99);
+}
+
+/* =========================
+   FOCUS ACCESSIBILITY
+========================= */
+
+.card-link:focus{
+    outline:none;
+}
+
+.card-link:focus .card,
+.card-link:focus .career-card{
+    box-shadow:
+        0 0 0 4px rgba(139,92,246,.25),
+        var(--shadow-hover);
+}
