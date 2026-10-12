@@ -629,4 +629,142 @@ footer a:hover{
     text-align:center;
 }
 
-/* ===============
+/* =========================
+   REVEAL ANIMATION
+========================= */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =========================
+   FOOTER CONTENT
+========================= */
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-content h3 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.footer-content p {
+    color: #d1d5db;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 992px) {
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero-grid {
+        gap: 40px;
+    }
+
+    .hero-stem {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 80px 20px;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        margin: auto;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-stem {
+        font-size: 4rem;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .highlight-card {
+        padding: 40px 25px;
+    }
+
+    section {
+        padding: 70px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .logo {
+        font-size: 1.4rem;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .hero-stem {
+        font-size: 3rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .stat-box h3 {
+        font-size: 2.2rem;
+    }
+}
