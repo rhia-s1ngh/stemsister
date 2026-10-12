@@ -398,15 +398,12 @@
     <!-- =========================
          STEM FACT
     ========================= -->
-
     <section class="reveal">
-
         <h2 class="section-title">
             STEM Fact Spotlight
         </h2>
 
         <div class="highlight-card">
-
             <h3>🔥 Did You Know?</h3>
 
             <p id="factText">
@@ -414,4 +411,95 @@
             </p>
 
             <button class="btn" onclick="newFact()">
+                Generate Fact
+            </button>
+        </div>
+    </section>
+
+    <!-- =========================
+         CALL TO ACTION
+    ========================= -->
+    <section class="alt-section reveal">
+        <h2 class="section-title">
+            Ready to Start Your STEM Journey?
+        </h2>
+
+        <p class="section-subtitle">
+            Explore resources, take challenges, connect with peers,
+            and discover exciting career opportunities.
+        </p>
+
+        <div class="hero-buttons" style="justify-content:center;">
+            <a href="textbooks.html" class="btn">
+                📚 Start Learning
+            </a>
+
+            <a href="discussions.html" class="btn secondary">
+                💬 Join Community
+            </a>
+        </div>
+    </section>
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+    <footer>
+        <div class="footer-content">
+            <h3>🌟 STEM Sister</h3>
+
+            <p>
+                Empowering future scientists, engineers,
+                innovators and leaders through STEM education.
+            </p>
+
+            <p>
+                © 2026 STEM Sister. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================= -->
+    <script>
+        const facts = [
+            "Ada Lovelace is widely considered the world's first computer programmer.",
+            "The International Space Station travels around Earth at about 28,000 km/h.",
+            "A single DNA strand in your body can be over 2 meters long when stretched.",
+            "GPS technology relies on advanced mathematics and engineering.",
+            "The human brain contains approximately 86 billion neurons.",
+            "Robotics is one of the fastest-growing engineering fields.",
+            "Women have played key roles in many major scientific discoveries.",
+            "Artificial intelligence is transforming healthcare, education, and technology.",
+            "Engineers helped create the internet used by billions worldwide.",
+            "Space probes have traveled beyond our solar system."
+        ];
+
+        function newFact() {
+            const fact =
+                facts[Math.floor(Math.random() * facts.length)];
+
+            document.getElementById("factText").textContent = fact;
+        }
+
+        // Reveal animation
+        const reveals = document.querySelectorAll(".reveal");
+
+        function revealOnScroll() {
+            reveals.forEach(item => {
+                const windowHeight = window.innerHeight;
+                const elementTop = item.getBoundingClientRect().top;
+
+                if (elementTop < windowHeight - 100) {
+                    item.classList.add("active");
+                }
+            });
+        }
+
+        window.addEventListener("scroll", revealOnScroll);
+        revealOnScroll();
+    </script>
+
+</body>
+</html>
             
